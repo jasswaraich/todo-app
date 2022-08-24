@@ -42,8 +42,8 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
 
     @Bean
     public UserDetailsService userDetailsService() {
-        String password = "password";
-        String username = "user";
+        String password = "iamjaspreet";
+        String username = "jaspreet";
         InMemoryUserDetailsManager manager = new InMemoryUserDetailsManager();
         String encodedPassword = passwordEncoder().encode(password);
         manager.createUser(User.withUsername(username).password(encodedPassword).roles("USER").build());
