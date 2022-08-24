@@ -2,9 +2,9 @@
 
 Todo app to keep you organized.
 
-# frontend
+# Frontend
 
-## Build Setup
+### Build 
 
 ``` bash
 # install dependencies
@@ -20,9 +20,6 @@ $ npm run start
 # generate static project
 $ npm run generate
 ```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
-
 
 # Backend 
 
