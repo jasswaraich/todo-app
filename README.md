@@ -28,4 +28,4 @@ $ npm run generate
 
 ### Run Jar file 
 
-```java -jar ./build/libs/playground-web-backend-0.0.1-SNAPSHOT.jar```
+``` java -jar backend/build/libs/todo-app-0.0.1-SNAPSHOT.jar```
