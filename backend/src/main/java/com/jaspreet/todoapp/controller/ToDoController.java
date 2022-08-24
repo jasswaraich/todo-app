@@ -1,7 +1,7 @@
-package com.milanwittpohl.playgroundwebbackend.controller;
+package com.jaspreet.todoapp.controller;
 
-import com.milanwittpohl.playgroundwebbackend.data.ToDo;
-import com.milanwittpohl.playgroundwebbackend.service.ToDoService;
+import com.jaspreet.todoapp.data.ToDo;
+import com.jaspreet.todoapp.service.ToDoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -15,27 +15,27 @@ public class ToDoController {
     private ToDoService toDoService;
 
     @GetMapping
-    public List<ToDo> findAll(){
+    public List<ToDo> findAll() {
         return toDoService.findAll();
     }
 
     @GetMapping("/{id}")
-    public ToDo findById(@PathVariable String id){
+    public ToDo findById(@PathVariable String id) {
         return toDoService.findById(id);
     }
 
     @PostMapping
-    public ToDo create(@RequestBody ToDo toDo){
+    public ToDo create(@RequestBody ToDo toDo) {
         return toDoService.save(toDo);
     }
 
     @PutMapping("/{id}")
-    public ToDo update(@RequestBody ToDo toDo){
+    public ToDo update(@RequestBody ToDo toDo) {
         return toDoService.save(toDo);
     }
 
     @DeleteMapping("/{id}")
-    public void deleteById(@PathVariable String id){
+    public void deleteById(@PathVariable String id) {
         toDoService.deleteById(id);
     }
 

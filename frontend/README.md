@@ -1,6 +1,6 @@
 # frontend
 
-> My sensational Nuxt.js project
+> ToDo App Frontend 
 
 ## Build Setup
 

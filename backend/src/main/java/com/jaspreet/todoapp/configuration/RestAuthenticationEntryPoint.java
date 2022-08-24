@@ -1,4 +1,4 @@
-package com.milanwittpohl.playgroundwebbackend.configuration;
+package com.jaspreet.todoapp.configuration;
 
 import org.springframework.security.web.AuthenticationEntryPoint;
 import org.springframework.stereotype.Component;
@@ -13,7 +13,9 @@ public final class RestAuthenticationEntryPoint
         implements AuthenticationEntryPoint {
 
     @Override
-    public void commence(HttpServletRequest request, HttpServletResponse response, org.springframework.security.core.AuthenticationException authException) throws IOException, ServletException {
+    public void commence(HttpServletRequest request, HttpServletResponse response,
+            org.springframework.security.core.AuthenticationException authException)
+            throws IOException, ServletException {
         response.sendError(HttpServletResponse.SC_UNAUTHORIZED, "Unauthorized");
     }
 }

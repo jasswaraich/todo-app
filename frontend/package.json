@@ -1,8 +1,8 @@
 {
   "name": "frontend",
   "version": "1.0.0",
-  "description": "My sensational Nuxt.js project",
-  "author": "Milan Wittpohl",
+  "description": "ToDo App Frontend",
+  "author": "Jaspreet Singh",
   "private": true,
   "scripts": {
     "dev": "nuxt",

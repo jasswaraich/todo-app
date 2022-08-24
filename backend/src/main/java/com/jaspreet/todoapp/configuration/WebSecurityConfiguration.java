@@ -1,4 +1,4 @@
-package com.milanwittpohl.playgroundwebbackend.configuration;
+package com.jaspreet.todoapp.configuration;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -36,13 +36,14 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .loginProcessingUrl("/api/login")
                 .successHandler(loginSuccessHandler)
                 .failureHandler(new SimpleUrlAuthenticationFailureHandler());
-        http.csrf().ignoringAntMatchers("/api/login").csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse());
+        http.csrf().ignoringAntMatchers("/api/login")
+                .csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse());
     }
 
     @Bean
     public UserDetailsService userDetailsService() {
-        String password = "password";
-        String username = "user";
+        String password = "iamjaspreet";
+        String username = "jaspreet";
         InMemoryUserDetailsManager manager = new InMemoryUserDetailsManager();
         String encodedPassword = passwordEncoder().encode(password);
         manager.createUser(User.withUsername(username).password(encodedPassword).roles("USER").build());

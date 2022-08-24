@@ -1,4 +1,4 @@
-package com.milanwittpohl.playgroundwebbackend.data;
+package com.jaspreet.todoapp.data;
 
 import org.springframework.data.annotation.Id;
 
@@ -11,7 +11,7 @@ public class ToDo {
 
     private Boolean completed;
 
-    public ToDo(String title, Boolean completed){
+    public ToDo(String title, Boolean completed) {
         this.title = title;
         this.completed = completed;
     }
