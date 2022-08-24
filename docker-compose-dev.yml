@@ -1,8 +1,8 @@
 version: '3'
 services:
-  playground-web-db:
+  todoapp-db:
     image: mongo:4.2.2
     environment:
-      MONGO_INITDB_DATABASE: playground-web
+      MONGO_INITDB_DATABASE: todoapp
     ports:
       - 27017:27017

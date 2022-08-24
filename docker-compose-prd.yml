@@ -1,14 +1,14 @@
 version: '3'
 services:
-  playground-web-frontend:
-    image: playground-web-frontend:latest
+  todoapp-frontend:
+    image: todoapp-frontend:latest
     environment:
       PORT: 3000
-      PROXY_API: http://playground-web-backend:8080/
+      PROXY_API: http://todoapp-frontend:8080/
     ports:
       - 3000:3000
-  playground-web-backend:
-    image: playground-web-backend:latest
+  todoapp-backend:
+    image: todoapp-backend:latest
     environment:
       MONGODB_URI: mongodb+srv://<user>:<password>@<your cluster>/todo?retryWrites=true&w=majority
     ports:
