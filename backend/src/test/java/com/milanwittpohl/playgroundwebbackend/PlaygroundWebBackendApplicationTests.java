@@ -1,10 +1,10 @@
-package com.jaspreet.todoapp;
+package com.milanwittpohl.playgroundwebbackend;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class TodoAppApplicationTests {
+class PlaygroundWebBackendApplicationTests {
 
 	@Test
 	void contextLoads() {

@@ -1,13 +1,13 @@
-package com.jaspreet.todoapp;
+package com.milanwittpohl.playgroundwebbackend;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class TodoAppApplication {
+public class PlaygroundWebBackendApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(TodoAppApplication.class, args);
+		SpringApplication.run(PlaygroundWebBackendApplication.class, args);
 	}
 
 }
